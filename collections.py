@@ -84,8 +84,6 @@ def hookJava():
 def on_message(message ,data):
     print message
 
-
-        
 def main():
     enumerateModules()
     #hookNative()
