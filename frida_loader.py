@@ -55,15 +55,15 @@ def main():
     #loadScript("java_InetSocketAddress.js", session, msgHandler)
     #loadScript("java_openvpn.js", session, msgHandler)
     
-    loadScript("java_JSONObject.js", session, msgHandler)
-    loadScript("java_String.js", session, msgHandler)
+    #loadScript("java_JSONObject.js", session, msgHandler)
+    #loadScript("java_String.js", session, msgHandler)
     
     #lib layer hook
     #loadScript("lib_read.js", session, msgHandler)
     #loadScript("lib_connect.js", session, msgHandler)
     
-    loadScript("java_JSONObject.js", session, msgHandler)
-    loadScript("java_String.js", session, msgHandler)
+    #loadScript("java_JSONObject.js", session, msgHandler)
+    #loadScript("java_String.js", session, msgHandler)
 
     #view
     #loadScript("view.js", session, msgHandler)

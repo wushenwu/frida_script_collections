@@ -47,3 +47,19 @@ python frida_loader.py  yourpackagename
 
 
 
+# 4. Lists To Hook
+
+Normal:
+
+```
+1. String
+2. JSONObject   
+```
+
+Network:
+
+```
+1. lib*.connect
+2. 
+```
+

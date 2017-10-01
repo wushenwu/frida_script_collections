@@ -1,5 +1,5 @@
 setImmediate(function() {   
-    console.log("[*] Starting script to deal with network");
+    console.log("[*] Starting script to deal with vpnService");
     
     //VpnService.prepare(), establish
     var isPrepared = false;
@@ -19,6 +19,36 @@ setImmediate(function() {
             return this.prepare(arguments[0]);
             
         };
+        
+        vpnService.protect.overload('java.net.Socket').implementation = function() {
+            send("protect('java.net.Socket') got called");
+            
+            info = arguments[0].toString();
+            if (info) {
+                console.log(info);
+            }
+
+            return this.protect(arguments[0]);
+        };
+
+        vpnService.protect.overload('java.net.DatagramSocket').implementation = function() {
+            send("protect('java.net.DatagramSocket') got called");
+            
+            console.log(arguments[0].getPort());
+            
+
+            return this.protect(arguments[0]);
+        };
+        
+        vpnService.protect.overload('int').implementation = function() {
+            send("protect('int') got called");
+            
+            console.log(arguments[0]);
+
+            return this.protect(arguments[0]);
+        };
+        
+        
         
         vpnBuilder = Java.use("android.net.VpnService$Builder"); 
         

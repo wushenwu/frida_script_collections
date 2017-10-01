@@ -1,1 +1,1 @@
-"Error: <init>(): specified argument types do not match any of:\n\t.overload()\n\t.overload('org.json.JSONTokener')\n\t.overload('java.lang.String')\n\t.overload('java.util.Map')\n\t.overload('org.json.JSONObject', '[Ljava.lang.String;')"
+"Error: protect(): has more than one overload, use .overload(<signature>) to choose from:\n\t.overload('java.net.Socket')\n\t.overload('java.net.DatagramSocket')\n\t.overload('int')"
